@@ -6,3 +6,11 @@ html, body {
     margin: 10%;
 }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    img {
+      width: 80%;  /* Reduce image size on small screens */
+      max-width: 400px;  /* Optional: limit the max width on mobile */
+    }
+  }
