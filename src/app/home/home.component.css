@@ -1,5 +1,9 @@
 /* home.component.scss */
-
+.sunset-image {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+}
 /* General Styles */
 .home-container {
     display: flex;
@@ -77,6 +81,7 @@
   
   /* Mobile View */
   @media (max-width: 768px) {
+
     .home-container {
       flex-direction: column; /* Stack contact info and image vertically */
       align-items: center; /* Center content vertically */
@@ -88,13 +93,15 @@
       text-align: center; /* Center the text */
     }
   
-    .contact-methods {
-      align-items: center; /* Center the contact methods */
-    }
-  
-    .contact-method a {
-      display: block;
-      margin-top: 5px;
-    }
+    /* On mobile, stack the items vertically and make them full width */
+  .contact-details {
+    flex-direction: column;  /* Stack items vertically */
+    align-items: center;     /* Center align items */
+  }
+
+  .contact-method {
+    flex: 1 1 100%;  /* Make each contact-method take full width */
+    text-align: center; /* Center the text on mobile */
+  }
   }
   

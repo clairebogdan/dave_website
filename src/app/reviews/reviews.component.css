@@ -1,5 +1,8 @@
 /* review.component.scss */
-
+.title {
+    padding-top: 20px;
+    text-align: center;
+}
 /* Reviews Container */
 .reviews-container {
     display: flex;

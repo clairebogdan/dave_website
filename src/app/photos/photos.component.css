@@ -1,5 +1,8 @@
 /* photos.component.scss */
-
+.title {
+    padding-top: 20px;
+    text-align: center;
+}
 .photo-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Default to 2 columns */
@@ -26,6 +29,7 @@
     .photo {
       /* Optional: Make sure each photo is fully contained within the grid */
       width: 100%;
+      padding-left: 7%;
     }
   
     /* If there's still excess space, ensure the images fill the container */
