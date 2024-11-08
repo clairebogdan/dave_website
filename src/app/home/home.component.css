@@ -1,0 +1,99 @@
+/* home.component.scss */
+
+/* General Styles */
+.home-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow content to wrap on mobile */
+    justify-content: center; /* Center all items horizontally */
+    align-items: flex-start; /* Align items at the top */
+    gap: 40px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center; /* Optional: Center text */
+  }
+  
+  .home-info {
+    flex: 1 1 45%; /* Takes up 45% of the width on desktop */
+    min-width: 280px; /* Prevents the container from getting too small */
+  }
+  
+  /* Contact Info Section */
+.contact-info {
+    padding: 20px 15px;
+    text-align: center; /* Center text */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 30px; /* Space between this section and services */
+    margin: 0 auto; /* Center the contact section on the page */
+  }
+  
+  .contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .contact-details {
+    display: flex;
+    justify-content: center; /* Align the contact details horizontally */
+    gap: 30px; /* Space between the contact methods */
+    align-items: center; /* Vertically align the contact methods */
+  }
+  
+  .contact-method {
+    text-align: center;
+  }
+  
+  .contact-method h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .contact-method a {
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-method a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Home Image */
+  .home-image {
+    flex: 1 1 45%; /* Takes up 45% of the width on desktop */
+    min-width: 280px; /* Prevents the container from getting too small */
+  }
+  
+  .home-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: Adds rounded corners to the image */
+  }
+  
+  /* Mobile View */
+  @media (max-width: 768px) {
+    .home-container {
+      flex-direction: column; /* Stack contact info and image vertically */
+      align-items: center; /* Center content vertically */
+    }
+  
+    .home-info,
+    .home-image {
+      flex: 1 1 100%; /* Take full width on mobile */
+      text-align: center; /* Center the text */
+    }
+  
+    .contact-methods {
+      align-items: center; /* Center the contact methods */
+    }
+  
+    .contact-method a {
+      display: block;
+      margin-top: 5px;
+    }
+  }
+  

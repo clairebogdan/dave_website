@@ -1,0 +1,108 @@
+/* contact.component.scss */
+
+/* General Styles */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow content to wrap on mobile */
+    justify-content: center; /* Center all items horizontally */
+    align-items: flex-start; /* Align items at the top */
+    gap: 40px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center; /* Optional: Center text */
+  }
+  
+  .contact-info,
+  .contact-form {
+    flex: 1 1 45%; /* Take up 45% of the container width on desktop */
+    min-width: 280px; /* Prevents containers from shrinking too small */
+  }
+  
+  /* Contact Info Section */
+  .contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-method h2 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .contact-method a {
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-method a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contact Form Styles */
+  .contact-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact-form button {
+    padding: 10px;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #005f87;
+  }
+  
+  /* Mobile View */
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column; /* Stack contact info and form vertically */
+      align-items: center; /* Center content vertically */
+    }
+  
+    .contact-info,
+    .contact-form {
+      flex: 1 1 100%; /* Take full width on mobile */
+      text-align: center; /* Center the text */
+    }
+  
+    .contact-methods {
+      align-items: center; /* Center the contact methods */
+    }
+  
+    .contact-method a {
+      display: block;
+      margin-top: 5px;
+    }
+  
+    .contact-form form {
+      width: 100%;
+    }
+  }
+  

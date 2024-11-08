@@ -1,0 +1,86 @@
+/* review.component.scss */
+
+/* Reviews Container */
+.reviews-container {
+    display: flex;
+    flex-direction: column; /* Stack reviews vertically */
+    gap: 40px; /* Space between each review */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Individual Review Layout */
+  .review {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px; /* Space between photo and text */
+    border: 1px solid #ccc; /* Optional: border around each review */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for a card-like effect */
+    background-color: #fff; /* White background for each review */
+  }
+  
+  .review-photo {
+    flex: 1 1 30%; /* Photo takes up 30% of the width */
+    max-width: 200px; /* Limit the maximum size of the photo */
+  }
+  
+  .review-photo img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make photo circular */
+  }
+  
+  .review-text {
+    flex: 1 1 70%; /* Text takes up 70% of the width */
+  }
+  
+  .review-text h2 {
+    font-size: 1.5rem; /* Customer name */
+    margin-bottom: 10px;
+  }
+  
+  .review-text p {
+    font-size: 1rem; /* Review text */
+    line-height: 1.5;
+  }
+  
+  .review-text .rating {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #ffd700; /* Gold color for stars */
+  }
+  
+  /* Mobile View - Stacking the photo and text */
+  @media (max-width: 768px) {
+    .review {
+      flex-direction: column; /* Stack photo and text vertically on mobile */
+      text-align: center; /* Center the text */
+    }
+  
+    .review-photo,
+    .review-text {
+      flex: 1 1 100%; /* Take full width on mobile */
+      max-width: 100%; /* Ensure no overflow on small screens */
+    }
+  
+    .review-photo img {
+      width: 80%; /* Optional: make the image smaller on mobile */
+      margin: 0 auto; /* Center the image */
+    }
+  
+    .review-text h2 {
+      font-size: 1.2rem; /* Adjust heading size for mobile */
+    }
+  
+    .review-text p {
+      font-size: 1rem; /* Adjust paragraph size for mobile */
+    }
+  
+    .review-text .rating {
+      font-size: 1rem; /* Adjust rating size for mobile */
+    }
+  }
+  
