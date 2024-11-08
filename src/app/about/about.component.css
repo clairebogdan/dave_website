@@ -1,5 +1,48 @@
-.dave-pic {
+/* .dave-pic {
     width: 40%;
     height: auto;
     border-radius: 20px;
-}
+} */
+/* about.component.scss */
+
+.about-container {
+    display: flex; /* Use Flexbox for a row layout */
+    align-items: center; /* Align items vertically centered */
+    justify-content: space-between; /* Space between photo and text */
+    gap: 20px; /* Optional: Space between photo and text */
+    padding: 20px; /* Add padding to the container */
+    box-sizing: border-box; /* Ensure padding doesn't affect layout */
+  }
+  
+  .about-photo img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Adds rounded corners to the image */
+  }
+  
+  /* The image will be 50% of the container's width on desktop */
+  .about-photo {
+    flex: 0 0 48%; /* Set the photo container to take up 48% of the available space */
+  }
+  
+  .about-text {
+    flex: 1; /* Let the text container take the remaining space */
+  }
+  
+  /* Media Query for Mobile Devices */
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column; /* Stack the photo and text vertically on mobile */
+      align-items: center; /* Center the content on mobile */
+    }
+  
+    .about-photo {
+      flex: 0 0 80%; /* Make the photo container take up 80% of the available space on mobile */
+      margin-bottom: 20px; /* Add some space below the photo */
+    }
+  
+    .about-text {
+      text-align: center; /* Center the text on mobile */
+    }
+  }
+  
