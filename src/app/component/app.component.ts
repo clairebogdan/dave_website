@@ -5,6 +5,7 @@ import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { AppService } from '../service/app.service';
 import { MatButtonModule } from '@angular/material/button';
+import { NavbarComponent } from '../nav-bar/nav-bar.component';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,8 @@ import { MatButtonModule } from '@angular/material/button';
     CommonModule,
     HttpClientModule,
     MatButtonModule,
-    FormsModule
+    FormsModule,
+    NavbarComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

@@ -1,0 +1,37 @@
+/* photos.component.scss */
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Default to 2 columns */
+    gap: 16px; /* Space between photos */
+    margin: 0 auto; /* Center the grid horizontally on desktop */
+    padding: 0 20px; /* Padding on the sides for desktop */
+    box-sizing: border-box; /* Ensures padding doesn't affect total width */
+  }
+  
+  .photo img {
+    width: 100%; /* Ensure images fill their container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Adds rounded corners to the images */
+  }
+  
+  /* Media Query for Mobile Devices */
+  @media (max-width: 768px) {
+    .photo-grid {
+      grid-template-columns: 1fr; /* Stack photos in a single column on mobile */
+      margin: 0 10px; /* Reduced margin on mobile */
+      padding: 0; /* Remove any padding to avoid overflow */
+    }
+  
+    .photo {
+      /* Optional: Make sure each photo is fully contained within the grid */
+      width: 100%;
+    }
+  
+    /* If there's still excess space, ensure the images fill the container */
+    .photo img {
+      width: 100%;
+      height: auto; /* Maintain aspect ratio */
+    }
+  }
+  

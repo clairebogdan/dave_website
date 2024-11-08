@@ -2,10 +2,8 @@
 
 html, body { 
     height: 100%; 
-    background-color: lightblue;
-    margin: 10%;
 }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {

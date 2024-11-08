@@ -1,0 +1,10 @@
+.nav-item {
+    margin-right: 40px;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+      height: 60px;  /* Smaller logo on mobile */
+      width: 100%;
+    }
+  }
