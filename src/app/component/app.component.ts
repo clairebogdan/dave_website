@@ -3,7 +3,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { AppService } from '../service/app.service';
 import { MatButtonModule } from '@angular/material/button';
 import { NavbarComponent } from '../nav-bar/nav-bar.component';
 
@@ -24,13 +23,9 @@ import { NavbarComponent } from '../nav-bar/nav-bar.component';
 })
 export class AppComponent implements OnInit {
 
-  constructor(private appService: AppService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    console.log('hello world')
   }
 
-  onClick() {
-    console.log('you clicked me')
-  }
 }
