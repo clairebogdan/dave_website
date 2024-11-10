@@ -24,7 +24,8 @@
   
   /* Contact Info Section */
 .contact-info {
-    padding: 20px 15px;
+  background-color: #a1c6ea; /* Light blue background */
+  padding: 20px 15px;
     text-align: center; /* Center text */
     border-radius: 8px; /* Rounded corners */
     margin-bottom: 30px; /* Space between this section and services */

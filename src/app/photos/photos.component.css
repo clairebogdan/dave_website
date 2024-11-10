@@ -17,6 +17,11 @@
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px; /* Optional: Adds rounded corners to the images */
   }
+  .photo video {
+    width: 100%; /* Make the video fill the container width */
+    height: auto; /* Maintain the video's aspect ratio */
+    border-radius: 8px; /* Optional: Adds rounded corners to the video */
+}
   
   /* Media Query for Mobile Devices */
   @media (max-width: 768px) {
@@ -37,5 +42,11 @@
       width: 100%;
       height: auto; /* Maintain aspect ratio */
     }
+
+     /* If there's still excess space, ensure the images fill the container */
+     .photo video {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+      }
   }
   

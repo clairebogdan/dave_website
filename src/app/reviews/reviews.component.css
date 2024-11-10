@@ -1,4 +1,51 @@
 /* review.component.scss */
+/* google-review Info Section */
+.google-review-info {
+  background-color: #fbf19d; /* Light blue background */
+  padding: 20px 15px;
+  text-align: center; /* Center text */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 30px; /* Space between this section and services */
+  margin: 0 auto; /* Center the google-review section on the page */
+}
+
+.google-review-info h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.google-review-info p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.google-review-details {
+  display: flex;
+  justify-content: center; /* Align the google-review details horizontally */
+  gap: 30px; /* Space between the google-review methods */
+  align-items: center; /* Vertically align the google-review methods */
+}
+
+.google-review-method {
+  text-align: center;
+}
+
+.google-review-method h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.google-review-method a {
+  color: #0077b6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.google-review-method a:hover {
+  text-decoration: underline;
+}
+
+/* review section */
 .title {
     padding-top: 20px;
     text-align: center;
