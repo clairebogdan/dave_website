@@ -34,7 +34,7 @@
     .photo {
       /* Optional: Make sure each photo is fully contained within the grid */
       width: 100%;
-      padding-left: 7%;
+      padding-left: 4%;
     }
   
     /* If there's still excess space, ensure the images fill the container */
