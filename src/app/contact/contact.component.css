@@ -8,6 +8,7 @@
     align-items: flex-start; /* Align items at the top */
     gap: 40px;
     padding: 20px;
+    padding-bottom: 200px;
     box-sizing: border-box;
     text-align: center; /* Optional: Center text */
   }

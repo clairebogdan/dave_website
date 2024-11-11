@@ -5,6 +5,7 @@ import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { NavbarComponent } from '../nav-bar/nav-bar.component';
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,8 @@ import { NavbarComponent } from '../nav-bar/nav-bar.component';
     HttpClientModule,
     MatButtonModule,
     FormsModule,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
