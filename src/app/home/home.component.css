@@ -1,10 +1,8 @@
-/* home.component.scss */
 .sunset-image {
     width: 100% !important;
     max-width: 100% !important;
     height: auto !important;
 }
-/* General Styles */
 .home-container {
     flex-wrap: wrap; /* Allow content to wrap on mobile */
     justify-content: center; /* Center all items horizontally */
@@ -21,51 +19,6 @@
     /* width: 80%; */
   }
   
-  /* Contact Info Section */
-.contact-info {
-  background-color: #a1c6ea; /* Light blue background */
-  padding: 20px 15px;
-    text-align: center; /* Center text */
-    border-radius: 8px; /* Rounded corners */
-    margin-bottom: 30px; /* Space between this section and services */
-    margin: 0 auto; /* Center the contact section on the page */
-  }
-  
-  .contact-info h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-  }
-  
-  .contact-info p {
-    font-size: 1rem;
-    margin-bottom: 15px;
-  }
-  
-  .contact-details {
-    display: flex;
-    justify-content: center; /* Align the contact details horizontally */
-    gap: 30px; /* Space between the contact methods */
-    align-items: center; /* Vertically align the contact methods */
-  }
-  
-  .contact-method {
-    text-align: center;
-  }
-  
-  .contact-method h3 {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-  }
-  
-  .contact-method a {
-    color: #0077b6;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .contact-method a:hover {
-    text-decoration: underline;
-  }
   
   /* Home Image */
   .home-image {
