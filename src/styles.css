@@ -4,6 +4,17 @@ html, body {
     height: 100%; 
 }
 body { font-family: Roboto, "Helvetica Neue", sans-serif; }
+a {
+      text-decoration: none;
+      color: #0077b6; 
+      font-weight: bold;
+    }
+
+    /* Add hover effect */
+    a:hover {
+      
+      text-decoration: underline;
+    }
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
