@@ -1,0 +1,40 @@
+<app-contact-block></app-contact-block>
+<div style="height: 50px"></div>
+<table mat-table [dataSource]="data" class="custom-table mat-elevation-z8">
+    <!-- Columns -->
+    <ng-container matColumnDef="tour">
+        <th mat-header-cell class="dark-blue" *matHeaderCellDef> Tour Type, Hours </th>
+        <td mat-cell style="font-weight: 500" *matCellDef="let element"> {{ element.tour }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="two">
+        <th mat-header-cell class="dark-blue" *matHeaderCellDef> 2 Guests </th>
+        <td mat-cell *matCellDef="let element"> {{ element.two }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="three">
+        <th mat-header-cell class="dark-blue" *matHeaderCellDef> 3 Guests </th>
+        <td mat-cell *matCellDef="let element"> {{ element.three }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="four">
+        <th mat-header-cell class="dark-blue" *matHeaderCellDef> 4 Guests </th>
+        <td mat-cell *matCellDef="let element"> {{ element.four }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="five">
+        <th mat-header-cell class="dark-blue" *matHeaderCellDef> 5 Guests </th>
+        <td mat-cell *matCellDef="let element"> {{ element.five }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="six">
+        <th mat-header-cell class="dark-blue" *matHeaderCellDef> 6 Guests </th>
+        <td mat-cell *matCellDef="let element"> {{ element.six }} </td>
+    </ng-container>
+
+    <!-- Header & Row Definitions -->
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+<div style="height: 200px"></div>

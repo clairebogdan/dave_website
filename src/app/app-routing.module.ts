@@ -8,12 +8,14 @@ import { ToursComponent } from './tours/tours.component';
 import { PhotosComponent } from './photos/photos.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { ContactComponent } from './contact/contact.component';
+import { PricingComponent } from './pricing/pricing.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'about', component: AboutComponent },
     { path: 'tours', component: ToursComponent },
     { path: 'photos', component: PhotosComponent },
+    { path: 'pricing', component: PricingComponent },
     { path: 'reviews', component: ReviewsComponent },
     { path: 'contact', component: ContactComponent },
 

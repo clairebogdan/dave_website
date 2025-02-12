@@ -3,6 +3,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatTableModule } from '@angular/material/table';
+
+
 import { MatButtonModule } from '@angular/material/button';
 import { NavbarComponent } from '../nav-bar/nav-bar.component';
 import { FooterComponent } from '../footer/footer.component';
@@ -16,6 +20,8 @@ import { FooterComponent } from '../footer/footer.component';
     CommonModule,
     HttpClientModule,
     MatButtonModule,
+    MatGridListModule,
+    MatTableModule,
     FormsModule,
     NavbarComponent,
     FooterComponent

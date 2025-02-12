@@ -1,0 +1,11 @@
+.dark-blue {
+    font-weight: 500;
+    color: rgb(9, 100, 181);
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .dark-blue {
+        text-align: center;
+    }
+}
