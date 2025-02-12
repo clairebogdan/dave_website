@@ -8,6 +8,13 @@
     text-align: center;
 }
 
+.center {
+    padding: 50px;
+    text-align: center;
+    font-size: 10pt;
+    font-style: italic;
+}
+
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
     .dark-blue {
